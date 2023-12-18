@@ -132,6 +132,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin.Designer.vb">
       <DependentUpon>Admin.vb</DependentUpon>
     </Compile>
@@ -200,6 +206,12 @@
     <Compile Include="Form8.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="History.Designer.vb">
+      <DependentUpon>History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="History.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -228,8 +240,17 @@
     <Compile Include="users.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="user_accounts.Designer.vb">
+      <DependentUpon>user_accounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_accounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +285,9 @@
     <EmbeddedResource Include="Form8.resx">
       <DependentUpon>Form8.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -275,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="users.resx">
       <DependentUpon>users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_accounts.resx">
+      <DependentUpon>user_accounts.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

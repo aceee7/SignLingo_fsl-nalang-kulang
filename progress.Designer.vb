@@ -23,11 +23,8 @@ Partial Class progress
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
@@ -75,19 +72,22 @@ Partial Class progress
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
-        Me.ProgressBar5 = New System.Windows.Forms.ProgressBar()
+        Me.progressphrases_fsl = New System.Windows.Forms.ProgressBar()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.Label40 = New System.Windows.Forms.Label()
-        Me.ProgressBar6 = New System.Windows.Forms.ProgressBar()
+        Me.progresswords_fsl = New System.Windows.Forms.ProgressBar()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ProgressBar7 = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar8 = New System.Windows.Forms.ProgressBar()
+        Me.progressnumbers_fsl = New System.Windows.Forms.ProgressBar()
+        Me.progressalphabet_fsl = New System.Windows.Forms.ProgressBar()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -100,15 +100,6 @@ Partial Class progress
         Me.Label1.Size = New System.Drawing.Size(806, 95)
         Me.Label1.TabIndex = 0
         '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label2.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__8_
-        Me.Label2.Location = New System.Drawing.Point(12, 9)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 66)
-        Me.Label2.TabIndex = 1
-        '
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
@@ -120,15 +111,6 @@ Partial Class progress
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "PROGRESS"
         '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label4.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__12_
-        Me.Label4.Location = New System.Drawing.Point(389, 17)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 53)
-        Me.Label4.TabIndex = 3
-        '
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
@@ -139,15 +121,6 @@ Partial Class progress
         Me.Label5.Size = New System.Drawing.Size(185, 58)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "SignLingo"
-        '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label6.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__19_
-        Me.Label6.Location = New System.Drawing.Point(717, 17)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 53)
-        Me.Label6.TabIndex = 5
         '
         'Panel1
         '
@@ -523,16 +496,16 @@ Partial Class progress
         Me.Panel2.Controls.Add(Me.Label45)
         Me.Panel2.Controls.Add(Me.Label46)
         Me.Panel2.Controls.Add(Me.Label37)
-        Me.Panel2.Controls.Add(Me.ProgressBar5)
+        Me.Panel2.Controls.Add(Me.progressphrases_fsl)
         Me.Panel2.Controls.Add(Me.Label38)
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.Label39)
         Me.Panel2.Controls.Add(Me.Label40)
-        Me.Panel2.Controls.Add(Me.ProgressBar6)
+        Me.Panel2.Controls.Add(Me.progresswords_fsl)
         Me.Panel2.Controls.Add(Me.Label41)
         Me.Panel2.Controls.Add(Me.Label8)
-        Me.Panel2.Controls.Add(Me.ProgressBar7)
-        Me.Panel2.Controls.Add(Me.ProgressBar8)
+        Me.Panel2.Controls.Add(Me.progressnumbers_fsl)
+        Me.Panel2.Controls.Add(Me.progressalphabet_fsl)
         Me.Panel2.Controls.Add(Me.Label14)
         Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Controls.Add(Me.Label16)
@@ -717,14 +690,14 @@ Partial Class progress
         Me.Label37.TabIndex = 33
         Me.Label37.Text = "100"
         '
-        'ProgressBar5
+        'progressphrases_fsl
         '
-        Me.ProgressBar5.ForeColor = System.Drawing.Color.SlateBlue
-        Me.ProgressBar5.Location = New System.Drawing.Point(140, 270)
-        Me.ProgressBar5.Maximum = 34
-        Me.ProgressBar5.Name = "ProgressBar5"
-        Me.ProgressBar5.Size = New System.Drawing.Size(235, 25)
-        Me.ProgressBar5.TabIndex = 12
+        Me.progressphrases_fsl.ForeColor = System.Drawing.Color.SlateBlue
+        Me.progressphrases_fsl.Location = New System.Drawing.Point(140, 270)
+        Me.progressphrases_fsl.Maximum = 34
+        Me.progressphrases_fsl.Name = "progressphrases_fsl"
+        Me.progressphrases_fsl.Size = New System.Drawing.Size(235, 25)
+        Me.progressphrases_fsl.TabIndex = 12
         '
         'Label38
         '
@@ -771,14 +744,14 @@ Partial Class progress
         Me.Label40.TabIndex = 30
         Me.Label40.Text = "25"
         '
-        'ProgressBar6
+        'progresswords_fsl
         '
-        Me.ProgressBar6.ForeColor = System.Drawing.Color.SlateBlue
-        Me.ProgressBar6.Location = New System.Drawing.Point(140, 201)
-        Me.ProgressBar6.Maximum = 130
-        Me.ProgressBar6.Name = "ProgressBar6"
-        Me.ProgressBar6.Size = New System.Drawing.Size(235, 25)
-        Me.ProgressBar6.TabIndex = 11
+        Me.progresswords_fsl.ForeColor = System.Drawing.Color.SlateBlue
+        Me.progresswords_fsl.Location = New System.Drawing.Point(140, 201)
+        Me.progresswords_fsl.Maximum = 130
+        Me.progresswords_fsl.Name = "progresswords_fsl"
+        Me.progresswords_fsl.Size = New System.Drawing.Size(235, 25)
+        Me.progresswords_fsl.TabIndex = 11
         '
         'Label41
         '
@@ -803,23 +776,23 @@ Partial Class progress
         Me.Label8.Text = "FILIPINO SIGN LANGUAGE (FSL)"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ProgressBar7
+        'progressnumbers_fsl
         '
-        Me.ProgressBar7.ForeColor = System.Drawing.Color.SlateBlue
-        Me.ProgressBar7.Location = New System.Drawing.Point(140, 132)
-        Me.ProgressBar7.Maximum = 20
-        Me.ProgressBar7.Name = "ProgressBar7"
-        Me.ProgressBar7.Size = New System.Drawing.Size(235, 25)
-        Me.ProgressBar7.TabIndex = 10
+        Me.progressnumbers_fsl.ForeColor = System.Drawing.Color.SlateBlue
+        Me.progressnumbers_fsl.Location = New System.Drawing.Point(140, 132)
+        Me.progressnumbers_fsl.Maximum = 20
+        Me.progressnumbers_fsl.Name = "progressnumbers_fsl"
+        Me.progressnumbers_fsl.Size = New System.Drawing.Size(235, 25)
+        Me.progressnumbers_fsl.TabIndex = 10
         '
-        'ProgressBar8
+        'progressalphabet_fsl
         '
-        Me.ProgressBar8.ForeColor = System.Drawing.Color.SlateBlue
-        Me.ProgressBar8.Location = New System.Drawing.Point(140, 60)
-        Me.ProgressBar8.Maximum = 26
-        Me.ProgressBar8.Name = "ProgressBar8"
-        Me.ProgressBar8.Size = New System.Drawing.Size(235, 25)
-        Me.ProgressBar8.TabIndex = 9
+        Me.progressalphabet_fsl.ForeColor = System.Drawing.Color.SlateBlue
+        Me.progressalphabet_fsl.Location = New System.Drawing.Point(140, 60)
+        Me.progressalphabet_fsl.Maximum = 26
+        Me.progressalphabet_fsl.Name = "progressalphabet_fsl"
+        Me.progressalphabet_fsl.Size = New System.Drawing.Size(235, 25)
+        Me.progressalphabet_fsl.TabIndex = 9
         '
         'Label14
         '
@@ -856,6 +829,33 @@ Partial Class progress
         Me.Label16.TabIndex = 5
         Me.Label16.Text = "ALPHABET"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label6.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__19_
+        Me.Label6.Location = New System.Drawing.Point(717, 17)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(65, 53)
+        Me.Label6.TabIndex = 5
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label4.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__12_
+        Me.Label4.Location = New System.Drawing.Point(389, 17)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(65, 53)
+        Me.Label4.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label2.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__8_
+        Me.Label2.Location = New System.Drawing.Point(12, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(69, 66)
+        Me.Label2.TabIndex = 1
         '
         'progress
         '
@@ -933,16 +933,16 @@ Partial Class progress
     Friend WithEvents Label45 As Label
     Friend WithEvents Label46 As Label
     Friend WithEvents Label37 As Label
-    Friend WithEvents ProgressBar5 As ProgressBar
+    Friend WithEvents progressphrases_fsl As ProgressBar
     Friend WithEvents Label38 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label39 As Label
     Friend WithEvents Label40 As Label
-    Friend WithEvents ProgressBar6 As ProgressBar
+    Friend WithEvents progresswords_fsl As ProgressBar
     Friend WithEvents Label41 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents ProgressBar7 As ProgressBar
-    Friend WithEvents ProgressBar8 As ProgressBar
+    Friend WithEvents progressnumbers_fsl As ProgressBar
+    Friend WithEvents progressalphabet_fsl As ProgressBar
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label

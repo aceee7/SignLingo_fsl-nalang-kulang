@@ -10,7 +10,7 @@ Public Class CrystalReportViewer
         Try
             strcon.Open()
 
-            Dim query As String = "SELECT firstname, lastname, username, pass  FROM accounts "
+            Dim query As String = "SELECT *  FROM accounts "
             'Dim command As New MySqlCommand(query, strcon)
 
             Using adapter As New MySqlDataAdapter(query, strcon)

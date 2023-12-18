@@ -1,8 +1,11 @@
 ﻿Imports System.Drawing.Drawing2D
+Imports MySql.Data.MySqlClient
 Public Class Form3
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RoundPanel(pnlMenu, 30)
+        lblname.Text = Form1.historyuname
+        lblmyname.Text = Form1.historyuname
 
     End Sub
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
@@ -67,6 +70,24 @@ Public Class Form3
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         progress.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        History.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
+        user_accounts.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+        About.Show()
         Me.Hide()
 
     End Sub

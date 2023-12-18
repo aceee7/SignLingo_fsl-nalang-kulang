@@ -25,15 +25,13 @@ Partial Class Form3
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblname = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -44,12 +42,14 @@ Partial Class Form3
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.lblwelcome = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.decreaseTimer = New System.Windows.Forms.Timer(Me.components)
         Me.increaseTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.lblmyname = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.pnlMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,37 +69,37 @@ Partial Class Form3
         Me.Label2.Size = New System.Drawing.Size(93, 453)
         Me.Label2.TabIndex = 2
         '
-        'Label5
+        'lblname
         '
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(12, 75)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 20)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "username"
+        Me.lblname.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.lblname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.lblname.Location = New System.Drawing.Point(12, 75)
+        Me.lblname.Name = "lblname"
+        Me.lblname.Size = New System.Drawing.Size(69, 20)
+        Me.lblname.TabIndex = 5
+        Me.lblname.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Blueberry Personal Use", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(153, 15)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(134, 31)
+        Me.Label9.Size = New System.Drawing.Size(136, 44)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "SignLingo"
         '
         'Label11
         '
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Abril Fatface", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(566, 23)
+        Me.Label11.Location = New System.Drawing.Point(557, 20)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(70, 32)
+        Me.Label11.Size = New System.Drawing.Size(90, 32)
         Me.Label11.TabIndex = 11
         Me.Label11.Text = "ABOUT"
         '
@@ -109,8 +109,6 @@ Partial Class Form3
         Me.pnlMenu.Controls.Add(Me.Label23)
         Me.pnlMenu.Controls.Add(Me.Label22)
         Me.pnlMenu.Controls.Add(Me.Button1)
-        Me.pnlMenu.Controls.Add(Me.Label21)
-        Me.pnlMenu.Controls.Add(Me.Label20)
         Me.pnlMenu.Controls.Add(Me.Label19)
         Me.pnlMenu.Controls.Add(Me.Label18)
         Me.pnlMenu.Controls.Add(Me.Label17)
@@ -152,28 +150,10 @@ Partial Class Form3
         Me.Button1.Text = "      LOGOUT"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(78, 136)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(91, 20)
-        Me.Label21.TabIndex = 5
-        Me.Label21.Text = "SECURITY"
-        '
-        'Label20
-        '
-        Me.Label20.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__30_
-        Me.Label20.Location = New System.Drawing.Point(15, 114)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(58, 51)
-        Me.Label20.TabIndex = 4
-        '
         'Label19
         '
         Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Font = New System.Drawing.Font("Arimo", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.Black
         Me.Label19.Location = New System.Drawing.Point(78, 76)
         Me.Label19.Name = "Label19"
@@ -192,10 +172,10 @@ Partial Class Form3
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Font = New System.Drawing.Font("Arimo", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.Location = New System.Drawing.Point(62, 16)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(89, 20)
+        Me.Label17.Size = New System.Drawing.Size(90, 19)
         Me.Label17.TabIndex = 1
         Me.Label17.Text = "SETTINGS"
         '
@@ -230,7 +210,7 @@ Partial Class Form3
         '
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__17_
-        Me.Label15.Location = New System.Drawing.Point(344, 232)
+        Me.Label15.Location = New System.Drawing.Point(344, 254)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(173, 172)
         Me.Label15.TabIndex = 16
@@ -239,7 +219,7 @@ Partial Class Form3
         '
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__16_
-        Me.Label14.Location = New System.Drawing.Point(258, 135)
+        Me.Label14.Location = New System.Drawing.Point(262, 152)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(357, 119)
         Me.Label14.TabIndex = 15
@@ -262,14 +242,15 @@ Partial Class Form3
         Me.Label3.Size = New System.Drawing.Size(69, 66)
         Me.Label3.TabIndex = 14
         '
-        'Label13
+        'lblwelcome
         '
-        Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.Image = Global.SignLingo.My.Resources.Resources.Hi_elaizapgz__Welcome_to_SignLingo_where_you_can_learn_basic_sign_language__1_
-        Me.Label13.Location = New System.Drawing.Point(126, 99)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(647, 75)
-        Me.Label13.TabIndex = 13
+        Me.lblwelcome.BackColor = System.Drawing.Color.Transparent
+        Me.lblwelcome.Font = New System.Drawing.Font("Blueberry Personal Use", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblwelcome.Location = New System.Drawing.Point(382, 71)
+        Me.lblwelcome.Name = "lblwelcome"
+        Me.lblwelcome.Size = New System.Drawing.Size(44, 44)
+        Me.lblwelcome.TabIndex = 13
+        Me.lblwelcome.Text = "Hi"
         '
         'Label7
         '
@@ -308,12 +289,34 @@ Partial Class Form3
         '
         Me.increaseTimer.Interval = 10
         '
+        'lblmyname
+        '
+        Me.lblmyname.AutoSize = True
+        Me.lblmyname.BackColor = System.Drawing.Color.Transparent
+        Me.lblmyname.Font = New System.Drawing.Font("Blueberry Personal Use", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmyname.Location = New System.Drawing.Point(416, 70)
+        Me.lblmyname.Name = "lblmyname"
+        Me.lblmyname.Size = New System.Drawing.Size(88, 44)
+        Me.lblmyname.TabIndex = 18
+        Me.lblmyname.Text = "name"
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Blueberry Personal Use", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(236, 125)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(431, 40)
+        Me.Label5.TabIndex = 19
+        Me.Label5.Text = "Welcome to SignLingo where you can learn signlanguage"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblmyname)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label10)
@@ -322,15 +325,17 @@ Partial Class Form3
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.lblwelcome)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.lblname)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label5)
         Me.Name = "Form3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.pnlMenu.ResumeLayout(False)
         Me.pnlMenu.PerformLayout()
@@ -341,7 +346,7 @@ Partial Class Form3
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lblname As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
@@ -349,15 +354,13 @@ Partial Class Form3
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
+    Friend WithEvents lblwelcome As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents pnlMenu As Panel
     Friend WithEvents Label22 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label20 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
@@ -365,4 +368,6 @@ Partial Class Form3
     Friend WithEvents Label19 As Label
     Friend WithEvents decreaseTimer As Timer
     Friend WithEvents increaseTimer As Timer
+    Friend WithEvents lblmyname As Label
+    Friend WithEvents Label5 As Label
 End Class

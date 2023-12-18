@@ -26,6 +26,26 @@ Public Class progress
         progressphrases_asl.Value = progressValuephrases
         MessageBox.Show($"Welcome, {username}! Your progress value in phrases is: {progressValuephrases}")
 
+        Dim progressValuealphafsl As Integer = GetProgressFromDatabase_alphabet_fsl(username)
+
+        ' Set the retrieved username and update the progress bar
+        progressalphabet_fsl.Value = progressValuealphafsl
+        MessageBox.Show($"Welcome, {username}! Your progress value in alphabet is: {progressValuealphafsl}")
+
+
+        Dim progressValuenumfsl As Integer = GetProgressFromDatabase_numbers_fsl(username)
+        progressnumbers_fsl.Value = progressValuenumfsl
+        MessageBox.Show($"Welcome, {username}! Your progress value in numbers is: {progressValuenumfsl}")
+
+        Dim progressValuewordfsl As Integer = GetProgressFromDatabase_words_fsl(username)
+        progresswords_fsl.Value = progressValuewordfsl
+        MessageBox.Show($"Welcome, {username}! Your progress value in words is: {progressValuewordfsl}")
+
+        Dim progressValuephrasesfsl As Integer = GetProgressFromDatabase_phrases_fsl(username)
+        progressphrases_fsl.Value = progressValuephrasesfsl
+        MessageBox.Show($"Welcome, {username}! Your progress value in phrases is: {progressValuephrasesfsl}")
+
+
         RoundLabel(Label7, 18)
         RoundLabel(Label8, 18)
         RoundLabel(Label9, 18)

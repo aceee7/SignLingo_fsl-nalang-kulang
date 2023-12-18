@@ -20,8 +20,8 @@ Public Class Favorites
                 adapter.Fill(dataTable)
 
             End Using
-            dgvHistory.DataSource = dataTable
-            dgvHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
+            dgvFavorites.DataSource = dataTable
+            dgvFavorites.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
 
         Catch ex As Exception
             MessageBox.Show("Error retrieving progress value from database: " & ex.Message)
@@ -30,13 +30,13 @@ Public Class Favorites
         End Try
     End Sub
 
-    Private Sub dgvHistory_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvHistory.CellContentClick
-        If e.RowIndex >= 0 AndAlso e.RowIndex < dgvHistory.RowCount - 1 Then
+    Private Sub dgvHistory_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvFavorites.CellContentClick
+        If e.RowIndex >= 0 AndAlso e.RowIndex < dgvFavorites.RowCount - 1 Then
             ' Access the value of the clicked cell in the first column (index 0)
-            Dim FirstName As Object = dgvHistory.Rows(e.RowIndex).Cells(0).Value
-            Dim LastName As Object = dgvHistory.Rows(e.RowIndex).Cells(1).Value
-            Dim Username As Object = dgvHistory.Rows(e.RowIndex).Cells(2).Value
-            Dim Password As Object = dgvHistory.Rows(e.RowIndex).Cells(3).Value
+            Dim FirstName As Object = dgvFavorites.Rows(e.RowIndex).Cells(0).Value
+            Dim LastName As Object = dgvFavorites.Rows(e.RowIndex).Cells(1).Value
+            Dim Username As Object = dgvFavorites.Rows(e.RowIndex).Cells(2).Value
+            Dim Password As Object = dgvFavorites.Rows(e.RowIndex).Cells(3).Value
 
 
 

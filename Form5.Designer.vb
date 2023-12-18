@@ -86,6 +86,7 @@ Partial Class Form5
         Me.Button31 = New System.Windows.Forms.Button()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.pnlphrases = New System.Windows.Forms.Panel()
+        Me.lblcategory = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.cmbphrases = New System.Windows.Forms.ComboBox()
         Me.pbimage = New System.Windows.Forms.PictureBox()
@@ -102,11 +103,6 @@ Partial Class Form5
         Me.btndone = New System.Windows.Forms.Button()
         Me.lbldesc = New System.Windows.Forms.Label()
         Me.lblLetter = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.pnlword = New System.Windows.Forms.Panel()
         Me.cbothings = New System.Windows.Forms.ComboBox()
         Me.cbofood = New System.Windows.Forms.ComboBox()
@@ -122,7 +118,11 @@ Partial Class Form5
         Me.btndone_words = New System.Windows.Forms.Button()
         Me.lblword_desc = New System.Windows.Forms.Label()
         Me.lblanimal = New System.Windows.Forms.Label()
-        Me.lblcategory = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.pnlnumbers.SuspendLayout()
         Me.pnlwords.SuspendLayout()
@@ -141,7 +141,7 @@ Partial Class Form5
         '
         Me.btnalphabet.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.btnalphabet.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnalphabet.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnalphabet.Font = New System.Drawing.Font("Abril Fatface", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnalphabet.ForeColor = System.Drawing.Color.White
         Me.btnalphabet.Location = New System.Drawing.Point(15, 113)
         Me.btnalphabet.Name = "btnalphabet"
@@ -154,7 +154,7 @@ Partial Class Form5
         '
         Me.btnnumbers.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.btnnumbers.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnnumbers.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnnumbers.Font = New System.Drawing.Font("Abril Fatface", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnnumbers.ForeColor = System.Drawing.Color.White
         Me.btnnumbers.Location = New System.Drawing.Point(15, 194)
         Me.btnnumbers.Name = "btnnumbers"
@@ -167,7 +167,7 @@ Partial Class Form5
         '
         Me.btnwords.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.btnwords.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnwords.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnwords.Font = New System.Drawing.Font("Abril Fatface", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnwords.ForeColor = System.Drawing.Color.White
         Me.btnwords.Location = New System.Drawing.Point(15, 277)
         Me.btnwords.Name = "btnwords"
@@ -180,7 +180,7 @@ Partial Class Form5
         '
         Me.btnphrases.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.btnphrases.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnphrases.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnphrases.Font = New System.Drawing.Font("Abril Fatface", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnphrases.ForeColor = System.Drawing.Color.White
         Me.btnphrases.Location = New System.Drawing.Point(15, 361)
         Me.btnphrases.Name = "btnphrases"
@@ -220,7 +220,7 @@ Partial Class Form5
         Me.Panel1.Controls.Add(Me.btnB)
         Me.Panel1.Controls.Add(Me.btnA)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Location = New System.Drawing.Point(117, 50)
+        Me.Panel1.Location = New System.Drawing.Point(131, 50)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(725, 380)
         Me.Panel1.TabIndex = 5
@@ -576,7 +576,7 @@ Partial Class Form5
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(119, 23)
+        Me.Label2.Location = New System.Drawing.Point(129, 23)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(251, 28)
         Me.Label2.TabIndex = 6
@@ -616,7 +616,7 @@ Partial Class Form5
         Me.pnlnumbers.Controls.Add(Me.Button55)
         Me.pnlnumbers.Controls.Add(Me.Button56)
         Me.pnlnumbers.Controls.Add(Me.Label7)
-        Me.pnlnumbers.Location = New System.Drawing.Point(123, 50)
+        Me.pnlnumbers.Location = New System.Drawing.Point(125, 50)
         Me.pnlnumbers.Name = "pnlnumbers"
         Me.pnlnumbers.Size = New System.Drawing.Size(725, 380)
         Me.pnlnumbers.TabIndex = 27
@@ -901,7 +901,7 @@ Partial Class Form5
         Me.pnlwords.Controls.Add(Me.Button32)
         Me.pnlwords.Controls.Add(Me.Button31)
         Me.pnlwords.Controls.Add(Me.Label22)
-        Me.pnlwords.Location = New System.Drawing.Point(123, 50)
+        Me.pnlwords.Location = New System.Drawing.Point(129, 50)
         Me.pnlwords.Name = "pnlwords"
         Me.pnlwords.Size = New System.Drawing.Size(723, 380)
         Me.pnlwords.TabIndex = 29
@@ -992,11 +992,20 @@ Partial Class Form5
         Me.pnlphrases.Controls.Add(Me.Label32)
         Me.pnlphrases.Controls.Add(Me.Panel11)
         Me.pnlphrases.Controls.Add(Me.lbltitle)
-        Me.pnlphrases.Location = New System.Drawing.Point(123, 54)
+        Me.pnlphrases.Location = New System.Drawing.Point(131, 54)
         Me.pnlphrases.Name = "pnlphrases"
         Me.pnlphrases.Size = New System.Drawing.Size(723, 380)
         Me.pnlphrases.TabIndex = 31
         Me.pnlphrases.Visible = False
+        '
+        'lblcategory
+        '
+        Me.lblcategory.Font = New System.Drawing.Font("Arimo", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcategory.Location = New System.Drawing.Point(484, 6)
+        Me.lblcategory.Name = "lblcategory"
+        Me.lblcategory.Size = New System.Drawing.Size(91, 26)
+        Me.lblcategory.TabIndex = 19
+        Me.lblcategory.Text = "PHRASES" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label10
         '
@@ -1091,7 +1100,7 @@ Partial Class Form5
         Me.pnldescription.Controls.Add(Me.picture)
         Me.pnldescription.Controls.Add(Me.Panel4)
         Me.pnldescription.Controls.Add(Me.lblLetter)
-        Me.pnldescription.Location = New System.Drawing.Point(119, 50)
+        Me.pnldescription.Location = New System.Drawing.Point(127, 50)
         Me.pnldescription.Name = "pnldescription"
         Me.pnldescription.Size = New System.Drawing.Size(725, 380)
         Me.pnldescription.TabIndex = 31
@@ -1161,46 +1170,6 @@ Partial Class Form5
         Me.lblLetter.TabIndex = 8
         Me.lblLetter.Text = "ALPHABET"
         '
-        'Label6
-        '
-        Me.Label6.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__38_
-        Me.Label6.Location = New System.Drawing.Point(784, 9)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(53, 42)
-        Me.Label6.TabIndex = 10
-        '
-        'Label3
-        '
-        Me.Label3.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__37_
-        Me.Label3.Location = New System.Drawing.Point(479, 9)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 42)
-        Me.Label3.TabIndex = 7
-        '
-        'Label1
-        '
-        Me.Label1.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__1_
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 81)
-        Me.Label1.TabIndex = 0
-        '
-        'Label9
-        '
-        Me.Label9.Image = Global.SignLingo.My.Resources.Resources.SIGN_lINGO__1_
-        Me.Label9.Location = New System.Drawing.Point(313, 93)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(267, 92)
-        Me.Label9.TabIndex = 12
-        '
-        'Label8
-        '
-        Me.Label8.Image = Global.SignLingo.My.Resources.Resources.Untitled_design
-        Me.Label8.Location = New System.Drawing.Point(334, 185)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(229, 215)
-        Me.Label8.TabIndex = 11
-        '
         'pnlword
         '
         Me.pnlword.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
@@ -1216,7 +1185,7 @@ Partial Class Form5
         Me.pnlword.Controls.Add(Me.Label12)
         Me.pnlword.Controls.Add(Me.Panel3)
         Me.pnlword.Controls.Add(Me.lblanimal)
-        Me.pnlword.Location = New System.Drawing.Point(123, 50)
+        Me.pnlword.Location = New System.Drawing.Point(131, 50)
         Me.pnlword.Name = "pnlword"
         Me.pnlword.Size = New System.Drawing.Size(723, 380)
         Me.pnlword.TabIndex = 32
@@ -1357,14 +1326,45 @@ Partial Class Form5
         Me.lblanimal.TabIndex = 8
         Me.lblanimal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblcategory
+        'Label6
         '
-        Me.lblcategory.Font = New System.Drawing.Font("Arimo", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblcategory.Location = New System.Drawing.Point(484, 6)
-        Me.lblcategory.Name = "lblcategory"
-        Me.lblcategory.Size = New System.Drawing.Size(91, 26)
-        Me.lblcategory.TabIndex = 19
-        Me.lblcategory.Text = "PHRASES" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label6.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__38_
+        Me.Label6.Location = New System.Drawing.Point(784, 9)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(53, 42)
+        Me.Label6.TabIndex = 10
+        '
+        'Label3
+        '
+        Me.Label3.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__37_
+        Me.Label3.Location = New System.Drawing.Point(479, 9)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(53, 42)
+        Me.Label3.TabIndex = 7
+        '
+        'Label1
+        '
+        Me.Label1.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__1_
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 81)
+        Me.Label1.TabIndex = 0
+        '
+        'Label9
+        '
+        Me.Label9.Image = Global.SignLingo.My.Resources.Resources.SIGN_lINGO__1_
+        Me.Label9.Location = New System.Drawing.Point(313, 93)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(267, 92)
+        Me.Label9.TabIndex = 12
+        '
+        'Label8
+        '
+        Me.Label8.Image = Global.SignLingo.My.Resources.Resources.Untitled_design
+        Me.Label8.Location = New System.Drawing.Point(334, 185)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(229, 215)
+        Me.Label8.TabIndex = 11
         '
         'Form5
         '
@@ -1372,7 +1372,7 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(869, 446)
+        Me.ClientSize = New System.Drawing.Size(876, 450)
         Me.Controls.Add(Me.pnlword)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pnldescription)

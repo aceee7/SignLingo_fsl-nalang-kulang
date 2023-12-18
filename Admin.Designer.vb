@@ -24,12 +24,6 @@ Partial Class Admin
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.timer = New System.Windows.Forms.Timer(Me.components)
         Me.pnlchangeable = New System.Windows.Forms.Panel()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -46,6 +40,11 @@ Partial Class Admin
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.pnlchangeable.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -59,62 +58,6 @@ Partial Class Admin
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 650)
         Me.Label2.TabIndex = 4
-        '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label7.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__13_
-        Me.Label7.Location = New System.Drawing.Point(29, 542)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 47)
-        Me.Label7.TabIndex = 13
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label5.Image = Global.SignLingo.My.Resources.Resources.image___2023_12_08T154536_025
-        Me.Label5.Location = New System.Drawing.Point(12, 20)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(80, 53)
-        Me.Label5.TabIndex = 12
-        '
-        'Label3
-        '
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label3.Image = Global.SignLingo.My.Resources.Resources.image___2023_12_08T154402_233
-        Me.Label3.Location = New System.Drawing.Point(29, 209)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(50, 53)
-        Me.Label3.TabIndex = 11
-        '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label1.Image = Global.SignLingo.My.Resources.Resources.image___2023_12_08T154439_155
-        Me.Label1.Location = New System.Drawing.Point(29, 118)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 53)
-        Me.Label1.TabIndex = 10
-        '
-        'Label6
-        '
-        Me.Label6.AutoEllipsis = True
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label6.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__13_
-        Me.Label6.Location = New System.Drawing.Point(30, 400)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(49, 50)
-        Me.Label6.TabIndex = 9
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
-        Me.Label4.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__10_
-        Me.Label4.Location = New System.Drawing.Point(30, 316)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(50, 40)
-        Me.Label4.TabIndex = 8
         '
         'timer
         '
@@ -269,21 +212,70 @@ Partial Class Admin
         Me.Label8.TabIndex = 21
         Me.Label8.Text = "Welcome to SignLingo"
         '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label7.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__13_
+        Me.Label7.Location = New System.Drawing.Point(29, 542)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(46, 47)
+        Me.Label7.TabIndex = 13
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label3.Image = Global.SignLingo.My.Resources.Resources.image___2023_12_08T154402_233
+        Me.Label3.Location = New System.Drawing.Point(29, 209)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(50, 53)
+        Me.Label3.TabIndex = 11
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label1.Image = Global.SignLingo.My.Resources.Resources.image___2023_12_08T154439_155
+        Me.Label1.Location = New System.Drawing.Point(29, 118)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(50, 53)
+        Me.Label1.TabIndex = 10
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label4.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__10_
+        Me.Label4.Location = New System.Drawing.Point(30, 316)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(50, 40)
+        Me.Label4.TabIndex = 8
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Abril Fatface", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(78, 49)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "LOGOUT"
+        Me.Button1.UseCompatibleTextRendering = True
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1063, 615)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnlchangeable)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Name = "Admin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin"
         Me.pnlchangeable.ResumeLayout(False)
         Me.pnlchangeable.PerformLayout()
@@ -297,11 +289,9 @@ Partial Class Admin
     End Sub
 
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents timer As Timer
     Friend WithEvents pnlchangeable As Panel
@@ -319,4 +309,5 @@ Partial Class Admin
     Friend WithEvents Label11 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents Button1 As Button
 End Class

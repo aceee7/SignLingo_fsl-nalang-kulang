@@ -223,8 +223,7 @@ Module dbconnection
             ' Retrieve the 'progress_value' from the 'user_progress' table
             Dim query As String = "SELECT progress_data_phrases FROM accounts WHERE username = @username"
             Dim command As New MySqlCommand(query, strcon)
-            command.Parameters.AddWithValue("@username", Form1.historyuname
-                                            )
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
 
             ' Execute the query and get the result
             Dim reader As MySqlDataReader = command.ExecuteReader()
@@ -267,15 +266,197 @@ Module dbconnection
             strcon.Close()
         End Try
 
+
     End Function
 
 
+    Public Sub TransferProgressToDatabase_phrases_fsl(username As String, progressValue As Integer)
+
+        Try
+            strcon.Open()
+
+            ' Update the 'progress_value' column in the 'user_progress' table
+            Dim query As String = "UPDATE accounts SET phrases_fsl = @progressValue WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@progressValue", progressValue)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
+
+            ' Execute the query
+            command.ExecuteNonQuery()
+
+        Catch ex As Exception
+            MessageBox.Show("Error transferring progress value to database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+    End Sub
+
+    Public Function GetProgressFromDatabase_phrases_fsl(username As String) As Integer
+        Dim progressValue As Integer = 0
+
+        Try
+            strcon.Open()
+
+            ' Retrieve the 'progress_value' from the 'user_progress' table
+            Dim query As String = "SELECT phrases_fsl FROM accounts WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
+
+            ' Execute the query and get the result
+            Dim reader As MySqlDataReader = command.ExecuteReader()
+            If reader.Read() Then
+                progressValue = reader.GetInt32("phrases_fsl")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show("Error retrieving progress value from database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+
+        Return progressValue
+    End Function
+
+    Public Sub TransferProgressToDatabase_words_fsl(username As String, progressValue As Integer)
+
+        Try
+            strcon.Open()
+
+            ' Update the 'progress_value' column in the 'user_progress' table
+            Dim query As String = "UPDATE accounts SET words_fsl = @progressValue WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@progressValue", progressValue)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
+
+            ' Execute the query
+            command.ExecuteNonQuery()
+
+        Catch ex As Exception
+            MessageBox.Show("Error transferring progress value to database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+    End Sub
+
+    Public Function GetProgressFromDatabase_words_fsl(username As String) As Integer
+        Dim progressValue As Integer = 0
+
+        Try
+            strcon.Open()
+
+            ' Retrieve the 'progress_value' from the 'user_progress' table
+            Dim query As String = "SELECT words_fsl FROM accounts WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
+
+            ' Execute the query and get the result
+            Dim reader As MySqlDataReader = command.ExecuteReader()
+            If reader.Read() Then
+                progressValue = reader.GetInt32("words_fsl")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show("Error retrieving progress value from database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+
+        Return progressValue
+    End Function
 
 
+    Public Sub TransferProgressToDatabase_numbers_fsl(username As String, progressValue As Integer)
 
+        Try
+            strcon.Open()
 
+            ' Update the 'progress_value' column in the 'user_progress' table
+            Dim query As String = "UPDATE accounts SET numbers_fsl = @progressValue WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@progressValue", progressValue)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
 
+            ' Execute the query
+            command.ExecuteNonQuery()
 
+        Catch ex As Exception
+            MessageBox.Show("Error transferring progress value to database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+    End Sub
 
+    Public Function GetProgressFromDatabase_numbers_fsl(username As String) As Integer
+        Dim progressValue As Integer = 0
+
+        Try
+            strcon.Open()
+
+            ' Retrieve the 'progress_value' from the 'user_progress' table
+            Dim query As String = "SELECT numbers_fsl FROM accounts WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
+
+            ' Execute the query and get the result
+            Dim reader As MySqlDataReader = command.ExecuteReader()
+            If reader.Read() Then
+                progressValue = reader.GetInt32("numbers_fsl")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show("Error retrieving progress value from database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+
+        Return progressValue
+    End Function
+
+    Public Sub TransferProgressToDatabase_alphabet_fsl(username As String, progressValue As Integer)
+
+        Try
+            strcon.Open()
+
+            ' Update the 'progress_value' column in the 'user_progress' table
+            Dim query As String = "UPDATE accounts SET alphabet_fsl = @progressValue WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@progressValue", progressValue)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
+
+            ' Execute the query
+            command.ExecuteNonQuery()
+
+        Catch ex As Exception
+            MessageBox.Show("Error transferring progress value to database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+    End Sub
+
+    Public Function GetProgressFromDatabase_alphabet_fsl(username As String) As Integer
+        Dim progressValue As Integer = 0
+
+        Try
+            strcon.Open()
+
+            ' Retrieve the 'progress_value' from the 'user_progress' table
+            Dim query As String = "SELECT alphabet_fsl FROM accounts WHERE username = @username"
+            Dim command As New MySqlCommand(query, strcon)
+            command.Parameters.AddWithValue("@username", Form1.historyuname)
+
+            ' Execute the query and get the result
+            Dim reader As MySqlDataReader = command.ExecuteReader()
+            If reader.Read() Then
+                progressValue = reader.GetInt32("alphabet_fsl")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show("Error retrieving progress value from database: " & ex.Message)
+        Finally
+            strcon.Close()
+        End Try
+
+        Return progressValue
+    End Function
 
 End Module
