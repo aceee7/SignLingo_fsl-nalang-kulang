@@ -45,6 +45,10 @@ Partial Class Admin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.pnlchangeable.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -243,7 +247,7 @@ Partial Class Admin
         '
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.Label4.Image = Global.SignLingo.My.Resources.Resources.Untitled_design__10_
-        Me.Label4.Location = New System.Drawing.Point(30, 316)
+        Me.Label4.Location = New System.Drawing.Point(29, 313)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(50, 40)
         Me.Label4.TabIndex = 8
@@ -261,12 +265,65 @@ Partial Class Admin
         Me.Button1.UseCompatibleTextRendering = True
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(32, 171)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(43, 13)
+        Me.Label5.TabIndex = 16
+        Me.Label5.Text = "HOME"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(31, 262)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(49, 13)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "USERS"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(16, 353)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(64, 30)
+        Me.Label15.TabIndex = 18
+        Me.Label15.Text = "Progress" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Reports"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(29, 593)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(49, 13)
+        Me.Label16.TabIndex = 19
+        Me.Label16.Text = "ABOUT"
+        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1063, 615)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnlchangeable)
         Me.Controls.Add(Me.Label7)
@@ -285,6 +342,7 @@ Partial Class Admin
         Me.Panel2.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -310,4 +368,8 @@ Partial Class Admin
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
 End Class

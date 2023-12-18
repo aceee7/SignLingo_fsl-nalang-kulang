@@ -25,7 +25,6 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -72,17 +71,6 @@ Partial Class Form1
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "USERNAME:"
         '
-        'Label7
-        '
-        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(147, 218)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(131, 15)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Forgot your password?"
-        '
         'btnLogin
         '
         Me.btnLogin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -119,7 +107,6 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.btnLogin)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -221,7 +208,6 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents btnLogin As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel1 As Panel
